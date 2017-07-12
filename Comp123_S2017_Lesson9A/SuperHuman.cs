@@ -7,7 +7,7 @@ using System.Text;
  * Name: Khim Tang
  * Date: July 11, 2017
  * Description: This is the SuperHuman class that extends the Human abstract class
- * Version: 0.2 - Added _initialize method
+ * Version: 0.2 - Added AddPower method
  */
 
 namespace Comp123_S2017_Lesson9A
@@ -56,5 +56,17 @@ namespace Comp123_S2017_Lesson9A
         }
 
         // PUBLIC METHODS
+
+            /// <summary>
+            /// This method adds a power to the Power List.
+            /// It takes two parameters - name (string) - rank (int)
+            /// </summary>
+            /// <param name="name"></param>
+            /// <param name="rank"></param>
+
+        public void AddPower(string name, int rank)
+        {
+            this.Powers.Add(new Power(name, rank));
+        }
     }
 }

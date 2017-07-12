@@ -7,7 +7,7 @@ using System.Threading.Tasks;
  * Name: Khim Tang
  * Date: July 11, 2017
  * Description: Demo for Lesson 9
- * Version: 0.2 - Instantiated an object of type SuperHuman
+ * Version: 0.3 - Added a Power to the SuperHuman object
  */
 
 
@@ -19,7 +19,7 @@ namespace Comp123_S2017_Lesson9A
         static void Main(string[] args)
         {
             SuperHuman superHuman = new SuperHuman("Super Dude");
-            superHuman.Powers.Add(new Power("Spider Climing", 50));
+            superHuman.AddPower("Spider Climing", 50);
         }
     }
 }
