@@ -5,8 +5,8 @@ using System.Text;
 
 /*
  * Name: Khim Tang
- * Date: July 11, 2017
- * Description: This interface lists the signature for any super hero subclass
+ * Date: July 13, 2017
+ * Description: This Interface lists the signature for any Super Hero Subclass
  * Version: 0.1 - declared the karma properties
  */
 
