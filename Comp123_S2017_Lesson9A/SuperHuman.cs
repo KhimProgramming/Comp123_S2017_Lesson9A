@@ -7,7 +7,7 @@ using System.Text;
  * Name: Khim Tang
  * Date: July 11, 2017
  * Description: This is the SuperHuman class that extends the Human abstract class
- * Version: 0.4 - Added DisplayPowers method
+ * Version: 0.4 - Added DisplayPowers stub method to satify the HumanSuper class requirement
  */
 
 namespace Comp123_S2017_Lesson9A
@@ -78,6 +78,14 @@ namespace Comp123_S2017_Lesson9A
             {
                 Console.WriteLine("Power: " + power.Name +"Rank: "+ power.Rank);
             }
+
+            /// <summary>
+            /// This method
+            /// </summary>
+            public override void DisplaySkills()
+        {
+            Console.WriteLine("Not implemented!");
         }
+    }
     }
 }
