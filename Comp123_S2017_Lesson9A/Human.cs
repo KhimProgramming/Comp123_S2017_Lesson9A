@@ -7,7 +7,7 @@ using System.Text;
  * Name: Khim Tang
  * Date: July 11, 2017
  * Description: This is the Abstract Human class
- * Version: 0.1 - Created the Abstract Human class
+ * Version: 0. - Added abstract method displaySkills
  */
 
 namespace Comp123_S2017_Lesson9A
@@ -45,6 +45,7 @@ namespace Comp123_S2017_Lesson9A
         // PRIVATE METHODS
 
         // PUBLIC METHODS
+        public abstract void DisplaySkills();
 
     }
 }
