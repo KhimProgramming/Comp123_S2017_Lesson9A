@@ -22,7 +22,7 @@ namespace Comp123_S2017_Lesson9A
 
         // PUBLIC PROPERTIES
 
-            public List<Power> Powers
+        public List<Power> Powers
         {
             get
             {
@@ -45,10 +45,10 @@ namespace Comp123_S2017_Lesson9A
 
         // PRIVATE METHODS
 
-            /// <summary>
-            /// This method initializes, instantiates 
-            /// and assigns values to class properties
-            /// </summary>
+        /// <summary>
+        /// This method initializes, instantiates 
+        /// and assigns values to class properties
+        /// </summary>
         private void _initialize()
         {
             this._powers = new List<Power>(); // creates an empty list
@@ -57,12 +57,12 @@ namespace Comp123_S2017_Lesson9A
 
         // PUBLIC METHODS
 
-            /// <summary>
-            /// This method adds a power to the Power List.
-            /// It takes two parameters - name (string) - rank (int)
-            /// </summary>
-            /// <param name="name"></param>
-            /// <param name="rank"></param>
+        /// <summary>
+        /// This method adds a power to the Power List.
+        /// It takes two parameters - name (string) - rank (int)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="rank"></param>
 
         public void AddPower(string name, int rank)
         {
@@ -74,18 +74,25 @@ namespace Comp123_S2017_Lesson9A
         /// </summary>
         public void DisplayPowers()
         {
+            string outputString = "";
+            outputString += "================================================\n";
+            outputString += "Super Human Name: " + this.Name + "\n";
+            outputString += "================================================\n";
             foreach (Power power in this.Powers)
             {
-                Console.WriteLine("Power: " + power.Name +"Rank: "+ power.Rank);
+                outputString += "Power: " + power.Name + "Rank: " + power.Rank + "\n";
             }
+            outputString += "===========================================================\n";
+            return outputString;
+        }
 
-            /// <summary>
-            /// This method
-            /// </summary>
-            public override void DisplaySkills()
+
+        /// <summary>
+        /// This method
+        /// </summary>
+        public override void DisplaySkills()
         {
             Console.WriteLine("Not implemented!");
         }
-    }
     }
 }
