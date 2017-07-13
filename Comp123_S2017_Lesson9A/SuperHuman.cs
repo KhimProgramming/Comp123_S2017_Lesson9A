@@ -70,7 +70,8 @@ namespace Comp123_S2017_Lesson9A
         }
 
         /// <summary>
-        /// This medthod displays each of the Powers stored in the Powers List
+        /// The ToString method overrides the built-in Object.ToString method.
+        /// It outputs a string that displays the superhuman's name and their power list.
         /// </summary>
         public override string ToString()
         {
@@ -88,7 +89,8 @@ namespace Comp123_S2017_Lesson9A
 
 
         /// <summary>
-        /// This method
+        /// This method overrides the Human abstract superclass DisplaySkills method.
+        /// This method will display a list of Skills to the Console.
         /// </summary>
         public override void DisplaySkills()
         {
