@@ -7,7 +7,7 @@ using System.Text;
  * Name: Khim Tang
  * Date: July 11, 2017
  * Description: This is the SuperHuman class that extends the Human abstract class
- * Version: 0.4 - Added DisplayPowers stub method to satify the HumanSuper class requirement
+ * Version: 0.5 - Added the overriden ToString method
  */
 
 namespace Comp123_S2017_Lesson9A
@@ -72,7 +72,7 @@ namespace Comp123_S2017_Lesson9A
         /// <summary>
         /// This medthod displays each of the Powers stored in the Powers List
         /// </summary>
-        public void DisplayPowers()
+        public override string ToString()
         {
             string outputString = "";
             outputString += "================================================\n";
@@ -92,7 +92,7 @@ namespace Comp123_S2017_Lesson9A
         /// </summary>
         public override void DisplaySkills()
         {
-            Console.WriteLine("Not implemented!");
+            Console.WriteLine("Not Implemented!");
         }
     }
 }
